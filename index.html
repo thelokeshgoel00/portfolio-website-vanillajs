@@ -4,17 +4,30 @@
         <meta charset="UTF-8">
         <title>Meet Lokesh</title>
         <link rel="stylesheet" href="index.css">
+
     </head>
     <body>
         <header>
-            <!--  logo Here  -->
-            <nav>
-                <ul>
-                    <li>Contact</li>
-                    <li>Resume</li>
-                    <li>Projects</li>
-                </ul>
-            </nav>
+            <div class="bg-img"></div>
+            <div class="container">
+                <!--  logo Here  -->
+                <nav class="navbar">
+
+                    <div class="flex-nav" id="main-nav">
+                        <a href="#" class="nav-link">Contact </a>
+                        <a href="#" class="nav-link">Resume </a>
+                        <a href="#" class="nav-link">Projects </a>
+                    </div>
+                    <span class = "navbar-toggle" id="js-navbar-toggle">
+                        <svg viewBox="0 0 100 80" width="40" height="40" >
+                          <rect width="100" height="12" ></rect>
+                          <rect y="30" width="100" height="12"></rect>
+                          <rect y="60" width="100" height="12"></rect>
+                        </svg>
+                    </span>
+                </nav>
+            </div>
         </header>
     </body>
+    <script src="index.js"></script>
 </html>
