@@ -1,0 +1,9 @@
+body{
+    background-color: #202020;
+    color:#f0f0f0;
+}
+header{
+    background-image: url("media/new-york-city-336475_1920.jpg");
+
+    min-height:800px;
+}
