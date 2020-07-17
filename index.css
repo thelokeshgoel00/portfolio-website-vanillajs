@@ -1,97 +1,87 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+html{
+    height:100%;
 }
 body{
     background-color: #202020;
     font-family: "Josefin Sans", sans-serif;
     color:#f0f0f0;
+    height: 100%;
+
     padding: 0;
     margin: 0;
 }
-
-.bg-img{
+header{
+    height:100%;
+    position: relative;
+}
+rect{
+    fill:white;
+}
+.bg-img {
     background-image: url("media/new-york-city-336475_1920.jpg");
-    height:800px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-header{
-    
-}
-
-.navbar {
+.container{
     position:absolute;
-    font-size: 18px;
-    display: flex;
-    top:2%;
-    width:90%;
-    justify-content: flex-end;
-
-    padding-bottom: 0;
-    height: 70px;
-    align-items: end;
+    top:10px;
+    width: 100%;
 }
-
-
 .flex-nav{
     display: flex;
-    width:25%;
-    justify-content: space-around;
-}
-.navbar-toggle{
-    display: none;
-}
-svg{
-    position: relative;
-    top:40%;
-    right:30%;
-    stroke: white;
-}
-rect{
-    fill:rgb(255,255,255);
+    position: absolute;
+    right:20px;
 }
 .nav-link{
+    margin-right:20px;
     text-decoration: none;
-    text-align:center;
     color:white;
-    margin-left:40px;
+    font-size: 20px;
 }
-@media(max-height: 800px){
-    .bg-img{
-        height: 400px;
-    }
-}
-@media screen and (max-width: 700px){
-    .navbar{
-        width:100%;
-    }
-    .navbar-toggle{
-        display: block;
-        position:relative;
 
-        cursor:pointer;
-        /*color: rgba(255, 255, 255, 0.8);*/
-        font-size: 18px;
+.navbar-toggle, .navbar-toggle-close{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navbar-toggle{
+        position: absolute;
+        right:20px;
     }
     .flex-nav{
-
-        margin: 0;
-        background: #343434;
-        position: relative;
-        right: -100%;
-        top: 70px;
-        width: 12%;
-        height: calc(100% - 70px);
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0;
-        transition: all 400ms;
-    }
-    .nav-active {
+        display: none;
+        position: absolute;
+        top:35px;
         right:0;
+        width: 30%;
+        padding-bottom: 10px;
+        background-color: #202020;
     }
+    .nav-link{
+        display: block;
+        width:100%;
+        text-align: center;
+        margin-top:5px;
 
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+    }
+    .navbar-toggle-close{
+        position: absolute;
+        right:20px;
+    }
+    .nav-active{
+        display: block;
+    }
+    .vis-bar, .vis-close{
+        display: block;
+    }
 
 }
